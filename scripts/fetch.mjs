@@ -87,6 +87,6 @@ for (const repo of repos) {
   else writeFileSync(join(README_DIR, `${repo.fullName.replace('/', '__')}.md`), readme);
 }
 
-writeFileSync(outPath, JSON.stringify({ date, previousDate: prev?.date ?? null, summary: [], repos }, null, 2) + '\n');
+writeFileSync(outPath, JSON.stringify({ date, fetchedAt: now.toISOString(), previousDate: prev?.date ?? null, summary: [], repos }, null, 2) + '\n');
 console.log(`Saved ${repos.length} repositories to data/${date}.json (compared with ${prev?.date ?? 'nothing'})`);
 if (missing.length) console.log(`No README found: ${missing.join(', ')}`);

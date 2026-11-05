@@ -35,6 +35,7 @@ h1 { margin: 4px 0 12px; font-size: 32px; line-height: 1.25; }
 h2 { margin: 40px 0 14px; font-size: 19px; }
 h3 { margin: 0; font-size: 18px; line-height: 1.35; }
 .eyebrow { margin: 0; font-size: 14px; font-weight: 600; }
+.fetched-at { margin: -6px 0 12px; color: var(--muted); font-size: 14px; }
 .pager { display: flex; justify-content: space-between; font-size: 14px; }
 
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 24px; }
@@ -61,14 +62,16 @@ h3 { margin: 0; font-size: 18px; line-height: 1.35; }
 .repos { display: grid; gap: 12px; }
 .repo {
   display: grid;
-  grid-template-columns: 32px 1fr;
-  padding: 18px 18px 16px 14px;
+  grid-template-columns: 44px 1fr;
+  column-gap: 10px;
+  padding: 18px 18px 16px 12px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 10px;
 }
 .repo[hidden] { display: none; }
-.repo-rank { color: var(--muted); font-size: 15px; font-weight: 600; text-align: center; line-height: 1.6; }
+.repo-rank { color: var(--text); font-size: 30px; font-weight: 700; line-height: 1; text-align: center; font-variant-numeric: tabular-nums; }
+.repo:nth-child(-n+3) .repo-rank { color: var(--accent); }
 .repo-body { min-width: 0; }
 .repo-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
 .badge {

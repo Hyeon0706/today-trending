@@ -17,6 +17,10 @@ const longDate = (d) => {
   return `${y}년 ${m}월 ${day}일 (${WEEKDAYS[new Date(y, m - 1, day).getDay()]})`;
 };
 
+const fetchedTime = (iso) => new Intl.DateTimeFormat('ko-KR', {
+  timeZone: 'Asia/Seoul', hour: 'numeric', minute: '2-digit', hour12: true,
+}).format(new Date(iso));
+
 function validate(report) {
   const problems = [];
   if (!report.summary?.length) problems.push('summary is empty');
@@ -81,6 +85,7 @@ function page(report, { dates, base, isIndex }) {
   <header>
     <p class="eyebrow"><a href="${base}index.html">Today Trending</a></p>
     <h1>${longDate(date)}</h1>
+    ${report.fetchedAt ? `<p class="fetched-at">${fetchedTime(report.fetchedAt)} (KST) 기준</p>` : ''}
     <nav class="pager" aria-label="리포트 이동">
       ${older ? `<a href="${link(older)}">← ${older}</a>` : '<span></span>'}
       ${newer ? `<a href="${link(newer)}">${newer} →</a>` : '<span></span>'}
