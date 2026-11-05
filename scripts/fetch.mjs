@@ -1,6 +1,6 @@
 // Collects today's GitHub trending list into data/YYYY-MM-DD.json and READMEs into .work/readme/.
 // Analysis fields are left empty for the report author to fill in. Pass --force to overwrite.
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -73,6 +73,7 @@ if (repos.length === 0) throw new Error('No repositories found: the trending pag
 const prev = previousReport();
 const prevByName = new Map((prev?.repos ?? []).map((r) => [r.fullName, r]));
 
+rmSync(README_DIR, { recursive: true, force: true });
 mkdirSync(README_DIR, { recursive: true });
 const missing = [];
 for (const repo of repos) {
