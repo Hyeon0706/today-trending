@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 트렌딩 리포트 2026-11-18</title>
+<meta name="description" content="오늘 트렌딩 15개 가운데 9개가 직전 리포트(11월 17일)에 이어 연속 진입했고, 6개가 새로 올라왔습니다. univer, open-code-review, stitch-skills, ag-ui, plannotator 5개는 3회 연속 진입이며, 어제 처음 올라온 last30days-skill, paper-orchestra, Arcane, Svelte도 이틀째 자리를 지켰습니다.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow"><a href="../index.html">Today Trending</a></p>
+    <h1>2026년 11월 18일 (수)</h1>
+    <p class="fetched-at">오전 9:33 (KST) 기준</p>
+    <nav class="pager" aria-label="리포트 이동">
+      <a href="../reports/2026-11-17.html">← 2026-11-17</a>
+      <span></span>
+    </nav>
+  </header>
+
+  <section class="stats" aria-label="오늘의 수치">
+    <div><strong>15</strong><span>트렌딩 레포</span></div>
+    <div><strong>6</strong><span>신규 진입</span></div>
+    <div><strong>12,675</strong><span>오늘 받은 스타</span></div>
+  </section>
+
+  <section class="summary">
+    <h2>오늘의 흐름</h2>
+    <ul><li>오늘 트렌딩 15개 가운데 9개가 직전 리포트(11월 17일)에 이어 연속 진입했고, 6개가 새로 올라왔습니다. univer, open-code-review, stitch-skills, ag-ui, plannotator 5개는 3회 연속 진입이며, 어제 처음 올라온 last30days-skill, paper-orchestra, Arcane, Svelte도 이틀째 자리를 지켰습니다.</li><li>하루 스타 증가는 신규 진입한 obra/superpowers가 1,917개로 가장 많았고, dream-num/univer(1,774개), ag-ui(1,445개), paper-orchestra(1,072개, 어제 313개에서 크게 증가)가 뒤를 이었습니다. 신규 진입 6개 중 superpowers, ECC, cursor/plugins, Claude-BugHunter, LoopForge 5개가 코딩 에이전트에 작업 방식·스킬·플러그인을 얹거나 여러 에이전트를 조율하는 도구로, 에이전트 &#39;하네스&#39; 생태계 쪽 관심이 한층 짙어졌습니다.</li><li>에이전트 도구가 아닌 신규 진입은 64M 파라미터 언어 모델을 처음부터 학습해 보는 교육용 프로젝트 minimind 하나입니다. 어제 목록에 있던 NVIDIA/SkillEvaluator, chrome-devtools-mcp, claude-trading-skills, ffmpeg-skill, jiangshan-map은 오늘 빠졌습니다.</li></ul>
+  </section>
+
+  <section>
+    <h2>레포지토리</h2>
+    <div class="filters" role="group" aria-label="분야 필터">
+      <button type="button" data-filter="" aria-pressed="true">전체 15</button>
+      <button type="button" data-filter="AI 에이전트 도구" aria-pressed="false">AI 에이전트 도구 10</button>
+      <button type="button" data-filter="개발 도구" aria-pressed="false">개발 도구 4</button>
+      <button type="button" data-filter="학습 자료" aria-pressed="false">학습 자료 1</button>
+    </div>
+    <div class="repos">
+    <article class="repo" id="elementalsouls-Claude-BugHunter" data-category="AI 에이전트 도구">
+      <div class="repo-rank">1</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener">elementalsouls/Claude-BugHunter</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">Claude Code 등 코딩 에이전트가 버그 바운티와 외부 레드팀 작업을 수행하도록 돕는 보안 점검용 스킬 번들입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +1,005 오늘</li>
+          <li>★ 9,264</li>
+          <li>⑂ 1,357</li>
+          <li>Python</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입으로 오늘 스타가 1,005개 늘어 누적 약 9,300개입니다. README는 83개 스킬과 15개 슬래시 명령, 공개된 HackerOne 보고서 681건에서 추린 취약점 패턴을 내세우며, 그중 433건은 출처를 개별로 확인할 수 있다고 설명합니다. 보안 분야에 특화된 에이전트 스킬에 대한 관심이 반영된 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>허가받은 버그 바운티나 침투 테스트를 하는 보안 연구자가 정찰, 취약점 유형별 점검, 보고서 작성을 체계화하는 데 참고할 수 있습니다. README는 인터넷에 노출된 외부 공격 표면만 다루고 내부 AD 공격·C2·탐지 우회는 의도적으로 제외한다고 밝힙니다. 반드시 허가된 범위의 대상에만 써야 하며, 스킬이 설치 스크립트로 에이전트 설정 폴더에 복사되므로 설치 전 내용을 검토하시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="mvanhorn-last30days-skill" data-category="AI 에이전트 도구">
+      <div class="repo-rank">2</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener">mvanhorn/last30days-skill</a></h3>
+          <span class="badge">2회 연속</span>
+        </div>
+        <p class="one-liner">주제 하나를 받아 Reddit, X, YouTube, Hacker News, Polymarket, 웹 등에서 최근 30일 내용을 찾고 반응 수치로 점수를 매겨 요약 브리핑을 써 주는 리서치 스킬입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +696 오늘</li>
+          <li>★ 69,046</li>
+          <li>⑂ 6,145</li>
+          <li>Python</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>2회 연속 진입이며, 오늘 스타가 696개 늘어 어제(135개)보다 증가 폭이 커졌습니다. 누적 약 6만 9,000개로 이미 널리 알려진 저장소입니다. README는 편집자가 고른 결과가 아니라 추천 수·좋아요·예측 시장 배당 같은 실제 반응으로 점수를 매긴다는 점을 내세웁니다.</dd>
+          <dt>활용 포인트</dt><dd>기술 동향이나 제품·회사에 대한 커뮤니티 반응을 빠르게 훑어보고 싶은 분께 유용합니다. 일부 출처는 설정 없이 쓸 수 있지만 X, YouTube 등은 키나 브라우저 세션 연결이 필요하다고 README가 설명합니다. 반응 수치가 사실의 정확성을 뜻하지는 않으며, 특정 개인의 정보를 모으는 용도로 쓰지 않도록 주의하셔야 합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="alibaba-open-code-review" data-category="개발 도구">
+      <div class="repo-rank">3</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">alibaba/open-code-review</a></h3>
+          <span class="badge">3회 연속</span>
+        </div>
+        <p class="one-liner">Git diff를 읽어 결정적 파이프라인과 LLM 에이전트를 함께 써서 줄 단위 리뷰 코멘트를 만들어 주는 AI 코드 리뷰 CLI입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +763 오늘</li>
+          <li>★ 53,719</li>
+          <li>⑂ 4,429</li>
+          <li>Go</li>
+          <li>개발 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>3회 연속 진입으로, 누적 스타 약 5만 3,700개에 오늘 763개가 늘었습니다. README는 Alibaba 사내에서 쓰던 도구를 공개한 것이라고 소개하며, 범용 에이전트보다 정밀도가 높고 토큰을 적게 쓴다는 자체 벤치마크를 내세웁니다.</dd>
+          <dt>활용 포인트</dt><dd>PR 단위 리뷰를 CI에 넣어 자동화하려는 팀에 유용합니다. NPE, 스레드 안전성, XSS, SQL 인젝션 같은 다언어 규칙이 내장되어 있고 OpenAI·Anthropic 호환 모델을 쓸 수 있습니다. 저장소 설명의 &#39;battle-tested&#39; 같은 표현은 자체 주장이며, README 스스로 재현율이 범용 에이전트보다 낮다고 밝히므로 사람의 리뷰와 함께 쓰시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="Tencent-LoopForge" data-category="AI 에이전트 도구">
+      <div class="repo-rank">4</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/Tencent/LoopForge" target="_blank" rel="noopener">Tencent/LoopForge</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">팀이 Codex, Claude Code, CodeBuddy 같은 코딩 에이전트로 요구사항을 처리하도록, Docker 샌드박스·역할 분리·사람 승인 단계를 갖춘 표준 워크플로(SOP)를 자체 서버에서 돌리는 작업 공간입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +591 오늘</li>
+          <li>★ 3,121</li>
+          <li>⑂ 436</li>
+          <li>Go</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입으로 오늘 스타가 591개 늘어 누적 약 3,100개입니다. Tencent가 MIT 라이선스로 공개했고, README는 에이전트 결과가 실행마다 들쭉날쭉한 문제를 계획·구현·리뷰·테스트 역할 분리와 승인 게이트로 반복 가능하게 만든다는 점을 내세웁니다. 10종의 코딩 에이전트 CLI를 실행기로 고를 수 있다는 점도 관심을 끈 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>여러 사람이 코딩 에이전트를 함께 쓰면서 작업 단계와 승인 절차를 표준화하고 싶은 개발팀에 유용합니다. Docker, MySQL 등을 포함한 자체 호스팅이 전제이고, 모델 API 키와 GitHub 연동이 필요합니다. README는 기본으로 모든 네트워크 인터페이스의 8090 포트에서 열린다고 안내하므로, 클라우드에 띄울 때는 관리자 계정을 만들기 전까지 접근을 제한하고 HTTPS 프록시를 두는 것이 좋습니다. 일부 부가 기능은 CodeBuddy 모델만 쓴다는 점도 확인이 필요합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="dream-num-univer" data-category="개발 도구">
+      <div class="repo-rank">5</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/dream-num/univer" target="_blank" rel="noopener">dream-num/univer</a></h3>
+          <span class="badge">3회 연속</span>
+        </div>
+        <p class="one-liner">자신의 제품 안에 스프레드시트와 문서 편집기를 넣을 수 있게 해 주는 오피스 SDK로, 이 저장소는 Web SDK의 핵심 엔진을 Apache-2.0으로 공개합니다.</p>
+        <ul class="meta">
+          <li class="today">★ +1,774 오늘</li>
+          <li>★ 28,897</li>
+          <li>⑂ 2,616</li>
+          <li>TypeScript</li>
+          <li>개발 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>3회 연속 진입이며 오늘 스타가 1,774개 늘어, 어제(1,828개)에 이어 이틀 연속 큰 폭으로 증가했습니다. README가 편집·수식 계산·협업 기능을 사람뿐 아니라 AI 에이전트도 같은 API로 쓸 수 있다는 점을 앞세우고 있어, 에이전트가 문서를 다루게 하려는 수요와 맞물린 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>웹 서비스에 엑셀과 비슷한 시트나 문서 편집 화면을 넣으려는 프런트엔드 개발자에게 유용하며, Node.js에서 화면 없이 수식 계산을 하는 용도로도 쓸 수 있습니다. 실시간 협업과 파일 가져오기·내보내기를 맡는 Server SDK, 일부 상용 플러그인과 AI 확장은 별도 라이선스이므로 필요한 기능이 오픈소스 범위에 드는지 먼저 확인하셔야 합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="getarcaneapp-arcane" data-category="개발 도구">
+      <div class="repo-rank">6</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener">getarcaneapp/arcane</a></h3>
+          <span class="badge">2회 연속</span>
+        </div>
+        <p class="one-liner">Docker 컨테이너와 관련 자원을 웹 화면에서 관리하는 도구로, 저장소 설명은 &#39;누구나 쓸 수 있게 설계한 현대적인 Docker 관리&#39;를 내세웁니다.</p>
+        <ul class="meta">
+          <li class="today">★ +618 오늘</li>
+          <li>★ 9,320</li>
+          <li>⑂ 513</li>
+          <li>Go</li>
+          <li>개발 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>2회 연속 진입이며 오늘 스타가 618개 늘어 어제(46개)보다 증가 폭이 크게 커졌습니다. README에 따르면 main 브랜치가 v3로 넘어갔고 2.x는 별도 브랜치로 남아 있어, 메이저 버전 전환이 관심을 받은 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>홈서버나 소규모 서버에서 Docker를 웹 화면으로 관리하고 싶은 분께 유용해 보입니다. README에는 기능 설명이 거의 없고 설치·설정은 공식 문서 사이트로 안내하므로, 지원 기능과 v2에서 v3로 옮길 때의 변경 사항은 문서에서 먼저 확인하셔야 합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="google-labs-code-stitch-skills" data-category="AI 에이전트 도구">
+      <div class="repo-rank">7</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener">google-labs-code/stitch-skills</a></h3>
+          <span class="badge">3회 연속</span>
+        </div>
+        <p class="one-liner">Google의 디자인 도구 Stitch를 코딩 에이전트에서 다루기 위한 에이전트 스킬 모음입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +350 오늘</li>
+          <li>★ 10,098</li>
+          <li>⑂ 1,328</li>
+          <li>TypeScript</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>3회 연속 진입으로 오늘 스타가 350개 늘었습니다. Agent Skills 공개 표준을 따라 Antigravity, Gemini CLI, Claude Code, Cursor 등에서 같은 스킬을 쓸 수 있다고 README가 설명하며, 디자인 생성과 이를 React 컴포넌트로 옮기는 작업을 에이전트로 잇는 흐름에 맞닿아 있습니다. 다만 하루 증가 폭은 어제(529개)보다 줄었습니다.</dd>
+          <dt>활용 포인트</dt><dd>Stitch로 화면을 설계하고 프런트엔드 코드로 옮기는 작업을 에이전트에게 맡기려는 팀에 유용합니다. Stitch MCP 서버 설정과 인증이 먼저 필요하며, 스킬끼리 의존 관계가 있어 일부만 설치할 때는 필요한 스킬을 함께 넣어야 한다고 README가 안내합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="cursor-plugins" data-category="AI 에이전트 도구">
+      <div class="repo-rank">8</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/cursor/plugins" target="_blank" rel="noopener">cursor/plugins</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">Cursor 에이전트용 플러그인 규격과, Cursor가 직접 관리하는 공식 플러그인(개발 워크플로·코드 리뷰·외부 SaaS 연동 등) 모음입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +201 오늘</li>
+          <li>★ 16,894</li>
+          <li>⑂ 1,830</li>
+          <li>TypeScript</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입으로 누적 약 1만 6,900개에 오늘 201개가 늘었습니다. README의 목록에는 브랜치 심층 리뷰(Thermos), 병렬 클라우드 에이전트 분배(Orchestrate), 더 강한 모델에 조언을 구하는 Advisor 같은 개발 플러그인과 Gmail·Google Drive·GitHub·Salesforce 등 서비스 연동 플러그인이 함께 실려 있어, 에이전트 플러그인 생태계가 커지는 흐름을 보여 주는 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>Cursor를 쓰는 개발자가 공식 플러그인을 고르거나, 자기 플러그인을 만들 때 각 디렉터리의 매니페스트(.cursor-plugin/plugin.json) 구조를 참고하기에 좋습니다. 메일·문서·CRM 연동 플러그인은 에이전트에 개인 데이터와 계정 권한을 넘기게 되므로 필요한 범위만 연결하시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="obra-superpowers" data-category="AI 에이전트 도구">
+      <div class="repo-rank">9</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">코딩 에이전트가 곧바로 코드를 쓰지 않고 요구사항 정리 → 설계 확인 → 구현 계획 → 하위 에이전트 개발 순서로 일하도록 만드는 스킬 기반 개발 방법론입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +1,917 오늘</li>
+          <li>★ 319,323</li>
+          <li>⑂ 28,477</li>
+          <li>Shell</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입이지만 누적 스타가 약 31만 9,000개로 이미 매우 유명한 저장소이며, 오늘 1,917개가 늘어 목록에서 증가 폭이 가장 컸습니다. README는 Claude Code 공식 마켓플레이스, Codex·Grok 공식 마켓플레이스를 비롯해 Cursor, Gemini CLI, Copilot CLI 등 십수 개 에이전트 설치 방법을 안내하고 있어, 지원 범위 확대가 다시 관심을 끈 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>에이전트가 계획 없이 코드를 쏟아내는 문제를 줄이고, TDD·YAGNI·DRY 원칙과 리뷰 단계를 습관처럼 지키게 하고 싶은 개발자에게 유용합니다. README는 몇 시간 동안 계획에서 벗어나지 않고 자율 작업하는 경우도 흔하다고 내세우지만, 결과는 작업과 모델에 따라 다를 수 있습니다. 스킬이 자동으로 발동하므로 가벼운 작업에서는 절차가 번거롭게 느껴질 수 있고, README에 시각 보조 기능의 원격 측정(telemetry) 항목이 따로 있으니 확인해 보시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="ag-ui-protocol-ag-ui" data-category="AI 에이전트 도구">
+      <div class="repo-rank">10</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank" rel="noopener">ag-ui-protocol/ag-ui</a></h3>
+          <span class="badge">3회 연속</span>
+        </div>
+        <p class="one-liner">AI 에이전트와 사용자 화면(프런트엔드 앱)이 주고받는 이벤트를 표준화한 개방형 프로토콜입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +1,445 오늘</li>
+          <li>★ 19,988</li>
+          <li>⑂ 2,067</li>
+          <li>TypeScript</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>3회 연속 진입이며 오늘 스타가 1,445개 늘어 어제(791개)보다 증가 폭이 커졌습니다. README는 MCP가 에이전트에 도구를 주고 A2A가 에이전트끼리 통신하게 한다면, AG-UI는 에이전트를 사용자 앱 안으로 들여오는 역할이라고 자리매김합니다. 여러 에이전트 프레임워크를 하나의 화면 규격으로 묶으려는 수요가 반영된 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>에이전트의 스트리밍 응답, 상태 동기화, 사람 승인 단계를 자체 앱 화면에 붙이려는 개발자에게 유용합니다. 표준 이벤트를 SSE나 WebSocket 등 원하는 전송 방식으로 보낼 수 있습니다. 문서와 예제 상당수가 CopilotKit 쪽으로 연결되므로 해당 생태계 의존 정도는 살펴보시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="backnotprop-plannotator" data-category="AI 에이전트 도구">
+      <div class="repo-rank">11</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener">backnotprop/plannotator</a></h3>
+          <span class="badge">3회 연속</span>
+        </div>
+        <p class="one-liner">코딩 에이전트가 낸 계획·문서·코드 변경을 브라우저에서 주석을 달며 검토하고, 그 피드백을 에이전트에게 바로 돌려보내는 검토 도구입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +691 오늘</li>
+          <li>★ 13,063</li>
+          <li>⑂ 1,313</li>
+          <li>TypeScript</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>3회 연속 진입으로 오늘 스타가 691개 늘었습니다. README는 여러 에이전트가 남긴 질문과 결정 사항을 한 창에서 처리하는 Inbox 기능을 앞세우며, 여러 에이전트를 동시에 돌릴 때 사람이 흐름을 놓치지 않으려는 수요와 맞아떨어진 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>Claude Code, Codex, Gemini CLI, OpenCode 등을 쓰면서 에이전트의 계획이나 diff를 꼼꼼히 확인하고 싶은 개발자에게 유용합니다. 데이터가 기본적으로 로컬에 남는다고 README가 밝히지만, 버전 확인이나 일부 공유·AI 기능은 외부와 통신한다는 점을 알고 쓰셔야 합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="sveltejs-svelte" data-category="개발 도구">
+      <div class="repo-rank">12</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/sveltejs/svelte" target="_blank" rel="noopener">sveltejs/svelte</a></h3>
+          <span class="badge">2회 연속</span>
+        </div>
+        <p class="one-liner">선언적으로 작성한 컴포넌트를 빌드 시점에 효율적인 JavaScript로 컴파일해, DOM의 바뀐 부분만 직접 갱신하게 만드는 웹 UI 프레임워크입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +477 오늘</li>
+          <li>★ 89,588</li>
+          <li>⑂ 6,251</li>
+          <li>JavaScript</li>
+          <li>개발 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>2회 연속 진입으로, 누적 약 8만 9,600개에 오늘 477개가 늘어 어제(115개)보다 증가 폭이 커졌습니다. README에는 최근 변화에 대한 내용이 없어, 이번 진입의 구체적인 계기는 저장소 정보만으로는 알기 어렵습니다.</dd>
+          <dt>활용 포인트</dt><dd>가벼운 번들과 간결한 문법으로 웹 앱을 만들고 싶은 프런트엔드 개발자에게 유용합니다. MIT 라이선스이며, 자세한 사용법은 README가 안내하는 공식 사이트에서 확인해야 합니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="affaan-m-ECC" data-category="AI 에이전트 도구">
+      <div class="repo-rank">13</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">Claude Code를 중심으로 Codex, Cursor 등 코딩 에이전트에 계획·테스트·리뷰·기억·보안 점검을 갖춘 작업 체계를 설치해 주는 에이전트·스킬·훅 묶음입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +883 오늘</li>
+          <li>★ 305,495</li>
+          <li>⑂ 44,979</li>
+          <li>JavaScript</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입이지만 누적 스타가 약 30만 5,000개로 매우 큰 저장소이며, 오늘 883개가 늘었습니다. README는 72개 에이전트, 327개 스킬, 훅·메모리·지속 학습, 그리고 프롬프트·MCP 설정·비밀값을 점검하는 AgentShield를 내세우며, 2.2 버전에서 Claude Code·Codex·Kimi Code용 안내형 설치를 추가했다고 설명합니다.</dd>
+          <dt>활용 포인트</dt><dd>코딩 에이전트에 일관된 작업 절차와 대규모 스킬 묶음을 한 번에 들이고 싶은 개발자에게 유용합니다. README 스스로 Claude Code 외 환경은 기능이 제한된 어댑터라며 지원 현황표를 먼저 보라고 안내합니다. 비공식 재배포본에 악성 코드가 있을 수 있다고 경고하므로 공식 경로로만 설치하고, 훅이 세션 동작에 개입하므로 설치 전에 어떤 훅 프로필을 쓸지 확인하시는 것이 좋습니다. 비공개 저장소용 호스팅 기능은 유료입니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="jingyaogong-minimind" data-category="학습 자료">
+      <div class="repo-rank">14</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/jingyaogong/minimind" target="_blank" rel="noopener">jingyaogong/minimind</a></h3>
+          <span class="badge badge-new">🆕 신규 진입</span>
+        </div>
+        <p class="one-liner">약 64M 파라미터의 초소형 언어 모델을 PyTorch로 처음부터 직접 학습해 보며 사전학습부터 SFT, LoRA, DPO, 강화학습, 증류까지 전 과정을 익히는 오픈소스 프로젝트 겸 튜토리얼입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +192 오늘</li>
+          <li>★ 65,954</li>
+          <li>⑂ 8,656</li>
+          <li>Python</li>
+          <li>학습 자료</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>신규 진입으로 누적 약 6만 6,000개에 오늘 192개가 늘었습니다. README는 3위안 정도의 GPU 비용과 2시간이면 학습할 수 있다고 내세우는데, 이는 단일 RTX 3090에서 SFT 1 epoch 기준의 실측이라고 단서를 답니다. 2026년 4월 Qwen3 구조에 맞춘 minimind-3를 공개했고, 도구 호출과 에이전트 강화학습 과정까지 담은 점이 꾸준한 관심으로 이어지는 것으로 보입니다.</dd>
+          <dt>활용 포인트</dt><dd>LLM의 내부 구조와 학습 파이프라인을 코드 한 줄씩 이해하고 싶은 학생·개발자에게 좋은 실습 교재입니다. 고수준 라이브러리 대신 핵심 알고리즘을 직접 구현했고 학습 데이터도 공개했다고 README가 설명합니다. 다만 64M 규모 모델이라 실사용 성능을 기대하기보다는 학습용으로 보셔야 하며, README 본문은 중국어가 기본이고 영어판이 따로 있습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="repo" id="google-research-paper-orchestra" data-category="AI 에이전트 도구">
+      <div class="repo-rank">15</div>
+      <div class="repo-body">
+        <div class="repo-head">
+          <h3><a href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener">google-research/paper-orchestra</a></h3>
+          <span class="badge">2회 연속</span>
+        </div>
+        <p class="one-liner">아이디어와 실험 기록 같은 원자료를 받아 개요, 문헌 조사, 본문 작성, 다듬기, 그래프 생성을 여러 에이전트가 나눠 맡아 학회 템플릿에 맞는 LaTeX 논문 원고로 만드는 멀티 에이전트 프레임워크입니다.</p>
+        <ul class="meta">
+          <li class="today">★ +1,072 오늘</li>
+          <li>★ 2,978</li>
+          <li>⑂ 413</li>
+          <li>Python</li>
+          <li>AI 에이전트 도구</li>
+        </ul>
+        <dl>
+          <dt>주목받는 이유</dt><dd>2회 연속 진입이며 오늘 스타가 1,072개 늘어 어제(313개)의 세 배 이상으로 커졌고, 누적 약 3,000개가 되었습니다. Google Cloud AI Research 연구진이 arXiv 논문과 함께 공개한 코드라는 점이 관심을 끈 것으로 보입니다. README는 Google의 공식 지원 제품이 아니라고 밝힙니다.</dd>
+          <dt>활용 포인트</dt><dd>AI 연구자가 실험 결과를 초안 원고로 옮겨 보거나 자동 논문 작성 파이프라인을 연구할 때 참고가 됩니다. Gemini나 OpenAI 모델 키, Semantic Scholar API 키가 필요하고 논문에 쓰인 데이터셋은 아직 포함되지 않았다고 README가 안내합니다. 생성된 인용과 내용은 반드시 직접 검증해야 하며, 투고처의 AI 사용 규정도 확인하시는 것이 좋습니다.</dd>
+        </dl>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <footer>출처: <a href="https://github.com/trending">github.com/trending</a> · 평일 오전 자동 생성 · 설명과 분석은 AI가 작성했습니다.</footer>
+</main>
+<script>
+const buttons = document.querySelectorAll('.filters button');
+buttons.forEach((button) => button.addEventListener('click', () => {
+  buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+  document.querySelectorAll('.repo').forEach((repo) => {
+    repo.hidden = Boolean(button.dataset.filter) && repo.dataset.category !== button.dataset.filter;
+  });
+}));
+</script>
+</body>
+</html>
